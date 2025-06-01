@@ -142,6 +142,7 @@ html, body {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr 1fr;
+  padding-bottom: 26px;
 }
 
 /*.header div {
@@ -151,6 +152,25 @@ html, body {
 .header-input {
   grid-row: 1/2;
   grid-column: 1/2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 24px;
+  gap: 16px;
+}
+
+.header-input img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.header-input input {
+  flex: 1;
+  border-radius: 20px;
+  border: 0px;
+  background-color: #E2E8F0;
 }
 
 .user-info {
@@ -161,11 +181,62 @@ html, body {
 .user-greet {
   grid-row: 2/3;
   grid-column: 1/2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 24px;
+}
+
+.user-info-photo {
+  border-radius: 50%;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.user-greet-hi {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-greet-name {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  padding-right: 64px;
+}
+
+.user-info p {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.bell-icon {
+  max-width: 25px;
+  max-height: 25px;
 }
 
 .header-buttons {
   grid-row: 2/3;
   grid-column: 2/3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-buttons button {
+  background-color: #1A92D3;
+  border: 0px;
+  border-radius: 50px;
+  color: #FFFFFF;
+  padding: 8px 32px;
+  font-weight: bolder;
 }
 
 .main-content {
@@ -174,10 +245,6 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
-/*.main-content div {
-  border: 1px solid magenta;
-}*/
 
 .main-content-left {
   grid-column: 1/2;
