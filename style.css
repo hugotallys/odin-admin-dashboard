@@ -57,9 +57,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Style Implementation */
 
+/* Custom Fonts */
+
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
 html, body {
   margin: 0;
   height: 100%;
+  font-family: Roboto;
 }
 
 .container {
@@ -76,12 +84,56 @@ html, body {
   grid-area: sidebar;
   display: grid;
   /*border: 2px solid blue;*/
+  background-color: #1A92D3;
+  color: #FFFFFF;
+  grid-template-rows: 0.5fr 2fr 2fr;
 }
 
 .sidebar ul {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
+}
+
+.sidebar-title img {
+  max-height: 50px;
+  max-width: 50px;
+  margin-left: 8px;
+}
+
+.sidebar li img {
+  max-height: 25px;
+  max-width: 25px;
+  margin-left: 8px;
+}
+
+.sidebar-title {
+  display: flex;
+  flex-direction: row;
+  min-height: auto;
+  font-size: 24px;
+  font-weight: bolder;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 4px;
+  gap: 24px;
+  max-height: 75px;
+} 
+
+.sidebar ul li {
+  display: flex;
+  flex-direction: row;
+  min-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18;
+  font-weight: bolder;
+  padding: 8px;
+  gap: 24px;
+}
+
+.sidebar-main-pages, .sidebar-pages {
+  margin-top: 24px;
 }
 
 .header {
