@@ -142,7 +142,7 @@ html, body {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr 1fr;
-  padding-bottom: 26px;
+  padding-bottom: 18px;
 }
 
 /*.header div {
@@ -243,11 +243,19 @@ html, body {
   grid-area: main-content;
   /*border: 2px solid magenta;*/
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  background-color: #E2E8F0;
+  padding-bottom: 32px;
 }
 
 .main-content-left {
   grid-column: 1/2;
+}
+
+.main-content-left > p {
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 8px ;
 }
 
 .main-content-right {
@@ -258,4 +266,39 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: 4px;
+}
+
+.project-card {
+  background: linear-gradient(to right, #f0b42a, #f0b42a 2%, #ffffff 2%, #ffffff 100%);
+  margin: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+.card-content {
+  font-weight: lighter;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+.project-icons {
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+  padding: 4px 0px;
+}
+
+.project-icons img {
+  max-width: 25px;
+  max-height: 25px;
 }
