@@ -262,6 +262,48 @@ html, body {
   grid-column: 2/3;
 }
 
+.vcard {
+  padding: 8px;
+}
+
+.vcard > p {
+  font-weight: bolder;
+  font-size: 16px;
+  padding: 8px ;
+}
+
+.vcard-content {
+  background-color: #FFFFFF;
+  padding: 24px;
+  border-radius: 15px;
+}
+
+.vcard-content-a .title {
+  font-weight: bolder;
+  font-size: 14px;
+  margin: 8px 0px;
+}
+
+.vcard-content-a .text {
+  font-weight: lighter;
+  font-size: 12px;
+  color: #808080;
+}
+
+.vcard-content-t {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 16px 0px;
+}
+
+.user-mention-photo {
+  border-radius: 50%;
+  max-width: 50px;
+  max-height: 50px;
+}
+
 .main-content-projects {
   display: grid;
   grid-template-columns: 1fr 1fr;
